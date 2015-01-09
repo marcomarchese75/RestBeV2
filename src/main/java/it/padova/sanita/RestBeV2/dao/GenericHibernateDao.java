@@ -1,4 +1,4 @@
-package it.padova.sanita.restbe.dao;
+package it.padova.sanita.RestBeV2.dao;
 
 import java.io.Serializable;
 import java.sql.Connection;
@@ -16,7 +16,7 @@ import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Example;
 import org.hibernate.internal.SessionFactoryImpl;
 
-import it.padova.sanita.restbe.utils.HibernateUtils;
+import it.padova.sanita.RestBeV2.utils.HibernateUtils;
 
 @Transactional
 public abstract class GenericHibernateDao<T, ID extends Serializable>

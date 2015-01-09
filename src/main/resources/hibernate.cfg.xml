@@ -19,7 +19,7 @@
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.hbm2ddl.auto">validate</property>
     
-    <mapping package="it.padova.sanita.restbe.dto" />
-    <mapping class="it.padova.sanita.restbe.dto.Patient" />
+    <mapping package="it.padova.sanita.RestBeV2.dto" />
+    <mapping class="it.padova.sanita.RestBeV2.dto.Patient" />
   </session-factory>
 </hibernate-configuration>

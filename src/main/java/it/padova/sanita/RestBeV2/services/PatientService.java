@@ -1,9 +1,9 @@
-package it.padova.sanita.restbe.services;
+package it.padova.sanita.RestBeV2.services;
 
 import java.util.List;
  
-import it.padova.sanita.restbe.dao.PatientDAO;
-import it.padova.sanita.restbe.dto.Patient;
+import it.padova.sanita.RestBeV2.dao.PatientDAO;
+import it.padova.sanita.RestBeV2.dto.Patient;
 
 import javax.ejb.Stateless;
 import javax.ws.rs.DELETE;

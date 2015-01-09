@@ -1,4 +1,4 @@
-package it.padova.sanita.restbe.utils;
+package it.padova.sanita.RestBeV2.utils;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.ResponseBuilder;

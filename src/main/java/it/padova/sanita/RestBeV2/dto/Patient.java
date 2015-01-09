@@ -1,5 +1,4 @@
-package it.padova.sanita.restbe.dto;
-
+package it.padova.sanita.RestBeV2.dto;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,7 +25,7 @@ public class Patient
 	
 	public Patient() {
 	}
-
+	
 	private Long ass_ipca;
 
 	private String ass_cogn;
@@ -36,7 +35,7 @@ public class Patient
 	private String ass_tel;
 
 	private String ass_email;
-
+	
 	@Id
 	@Column(name="ASS_IPCA", unique = true, nullable = false)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "IdPatientSequenceGen")

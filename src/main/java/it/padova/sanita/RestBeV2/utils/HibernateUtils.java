@@ -1,4 +1,4 @@
-package it.padova.sanita.restbe.utils;
+package it.padova.sanita.RestBeV2.utils;
 
 import javax.annotation.PostConstruct;
 

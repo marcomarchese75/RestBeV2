@@ -1,4 +1,4 @@
-package it.padova.sanita.restbe.dao;
+package it.padova.sanita.RestBeV2.dao;
 
 import java.sql.CallableStatement;
 import java.sql.ResultSet;
@@ -15,7 +15,7 @@ import org.hibernate.Query;
 
 import com.google.gson.Gson;
 
-import it.padova.sanita.restbe.dto.Patient;
+import it.padova.sanita.RestBeV2.dto.Patient;
 
 @Transactional()
 public class PatientDAO extends GenericHibernateDao<Patient, Long> {

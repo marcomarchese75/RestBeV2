@@ -1,19 +1,19 @@
 package it.padova.sanita.RestBeV2.dao;
 
 import java.sql.CallableStatement;
-import java.sql.ResultSet;
+//import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.transaction.Transactional;
 
-import oracle.jdbc.internal.OracleTypes;
+//import oracle.jdbc.internal.OracleTypes;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 
-import com.google.gson.Gson;
+//import com.google.gson.Gson;
 
 import it.padova.sanita.RestBeV2.dto.Patient;
 

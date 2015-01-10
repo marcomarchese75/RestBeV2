@@ -15,15 +15,17 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+import com.google.gson.GsonBuilder;
+//import com.google.gson.reflect.TypeToken;
 
 /** Example resource class hosted at the URI path "/myresource"
  */
 @Path("/rest")
 @Stateless
 public class PatientService {
-    
-	private Gson gson = new Gson();
+    // Utilizzo GsonBuilder per il settaggio del formato della data
+	//private Gson gson = new Gson();
+	Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ssX").create();
 	private PatientDAO patientDAO = new PatientDAO();
 	
     /** Method processing HTTP GET requests, producing "text/plain" MIME media

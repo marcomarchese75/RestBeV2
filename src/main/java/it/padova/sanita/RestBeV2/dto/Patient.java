@@ -7,6 +7,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import java.util.Date;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 @Table(name="ASSISTITO", schema="scott")
@@ -14,13 +17,14 @@ import javax.persistence.Table;
 public class Patient
 {	
 	public Patient(Long ass_ipca, String ass_cogn, String ass_nome,
-			String ass_tel, String ass_email) {
+			String ass_tel, String ass_email, Date ass_datna) {
 		
 		this.ass_ipca = ass_ipca;
 		this.ass_cogn = ass_cogn;
 		this.ass_nome = ass_nome;
 		this.ass_tel = ass_tel;
 		this.ass_email = ass_email;
+		this.ass_datna = ass_datna;
 	}
 	
 	public Patient() {
@@ -35,6 +39,8 @@ public class Patient
 	private String ass_tel;
 
 	private String ass_email;
+	
+	private Date ass_datna;
 	
 	@Id
 	@Column(name="ASS_IPCA", unique = true, nullable = false)
@@ -91,5 +97,15 @@ public class Patient
 	public void setAss_Email(String ass_email)
 	{
 		this.ass_email = ass_email;
+	}
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name = "ASS_DATNA", nullable = true, length = 19)
+	public Date getAss_Datna() {
+		return ass_datna;
+	}
+ 
+	public void setAss_Datna(Date ass_datna) {
+		this.ass_datna = ass_datna;
 	}
 }
